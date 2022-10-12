@@ -25,3 +25,6 @@ gather_srcs(cinnapi_src SRCS
     layer_norm.cc)
 
 cc_test(test_layer_norm SRCS layer_norm_test.cc DEPS cinncore)
+cc_test(test_paddle_elementwise SRCS elementwise_test.cc DEPS cinncore)
+cc_test(test_paddle_where SRCS where_test.cc DEPS cinncore)
+cc_test(test_paddle_squeeze SRCS squeeze_test.cc DEPS cinncore)
